@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Semente da Liberdade</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>        
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="https://sementedaliberdade.vercel.app/">Semente da Liberdade</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Missão</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#signup">Contatos</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>        
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="text-white mb-4">Projeto Analytics</h2>
+                        <p class="text-white-50">
+                            Através do Instagram, rede social com 99 milhões de usuários ativos no Brasil - segundo a Statista, analisamos o crescimento de perfis pró-liberdade.
+                        </p>
+                    </div>
+                </div>                                                                
+            </div>
+        </section>
+        <!-- Projects-->
+        <section class="projects-section bg-light" id="projects">
+            <div class="container px-4 px-lg-5">
+                <!-- Featured Project Row-->
+                <div class="row gx-0 mb-4 mb-lg-5 align-items-center">                    
+                    <div id="chartdiv" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>
+                    <!-- amCharts javascript sources -->
+		                <script type="text/javascript" src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+		                <script type="text/javascript" src="https://www.amcharts.com/lib/3/serial.js"></script>
+		
+
+                        <!-- amCharts javascript code -->
+                        <script type="text/javascript">
+                            AmCharts.makeChart("chartdiv",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "category",
+                                    "startDuration": 1,
+                                    "theme": "default",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [
+                                        {
+                                            "accessibleLabel": "Bruno Perini",
+                                            "balloonText": "Bruno Perini",
+                                            "bullet": "round",
+                                            "id": "AmGraph-1",
+                                            "title": "Bruno Perini",
+                                            "type": "smoothedLine",
+                                            "valueField": "Bruno Perini"
+                                        },
+                                        {
+                                            "accessibleLabel": "Renata Barreto",
+                                            "balloonText": "Renata Barreto",
+                                            "bullet": "round",
+                                            "id": "AmGraph-2",
+                                            "title": "Renata Barreto",
+                                            "type": "smoothedLine",
+                                            "valueField": "Renata Barreto"
+                                        },
+                                        {
+                                            "id": "AmGraph-3",
+                                            "bullet": "round",
+                                            "title": "Mariana Brito",
+                                            "type": "smoothedLine",
+                                            "valueField": "Mariana Brito"
+                                        },
+                                        {
+                                            "id": "AmGraph-4",
+                                            "bullet": "round",
+                                            "title": "Bruno Garschagen",
+                                            "type": "smoothedLine",
+                                            "valueField": "Bruno Garschagen"
+                                        },
+                                        {
+                                            "id": "AmGraph-5",
+                                            "bullet": "round",
+                                            "title": "Fernando Ulrich",
+                                            "type": "smoothedLine",
+                                            "valueField": "Fernando Ulrich"
+                                        }
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "Influencers"
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+                                    "legend": {
+                                        "enabled": true,
+                                        "accessibleLabel": "Seguidores",
+                                        "rollOverGraphAlpha": 0,
+                                        "useGraphSettings": true
+                                    },
+                                    "titles": [
+                                        {
+                                            "id": "Title-1",
+                                            "size": 15,
+                                            "text": "Influencers"
+                                        }
+                                    ],
+                                    "dataProvider": [
+                                        {
+                                            "Bruno Garschagen": "105460",
+                                            "Bruno Perini": "667872",
+                                            "Renata Barreto": "327863",
+                                            "Mariana Brito": "248336",
+                                            "Fernando Ulrich": "82831",
+                                            "category": "Dez - 20"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "105889",
+                                            "Bruno Perini": "685840",
+                                            "Renata Barreto": "334545",
+                                            "Mariana Brito": "253459",
+                                            "Fernando Ulrich": "85170",
+                                            "category": "Jan - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "107743",
+                                            "Bruno Perini": "741915",
+                                            "Renata Barreto": "373057",
+                                            "Mariana Brito": "276304",
+                                            "Fernando Ulrich": "92066",
+                                            "category": "Fev - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "113452",
+                                            "Bruno Perini": "762554",
+                                            "Renata Barreto": "379225",
+                                            "Mariana Brito": "281785",
+                                            "Fernando Ulrich": "95385",
+                                            "category": "Mar - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "122367",
+                                            "Bruno Perini": "821653",
+                                            "Renata Barreto": "396174",
+                                            "Mariana Brito": "303818",
+                                            "Fernando Ulrich": "100228",
+                                            "category": "Abr - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "125519",
+                                            "Bruno Perini": "874363",
+                                            "Renata Barreto": "413336",
+                                            "Mariana Brito": "317831",
+                                            "Fernando Ulrich": "106989",
+                                            "category": "Mai - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "125989",
+                                            "Bruno Perini": "958319",
+                                            "Renata Barreto": "427065",
+                                            "Mariana Brito": "327786",
+                                            "Fernando Ulrich": "113112",
+                                            "category": "Jun - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "128308",
+                                            "Bruno Perini": "1075264",
+                                            "Renata Barreto": "458653",
+                                            "Mariana Brito": "342607",
+                                            "Fernando Ulrich": "118969",
+                                            "category": "Jul - 21"
+                                        },
+                                        {
+                                            "Bruno Garschagen": "130310",
+                                            "Bruno Perini": "1138879",
+                                            "Renata Barreto": "497423",
+                                            "Mariana Brito": "357722",
+                                            "Fernando Ulrich": "121913",
+                                            "category": "Ago - 21"
+                                        }
+                                    ]
+                                }
+                            );
+                        </script>
+                        <p></p> 
+                </div>
+                <!-- Influencers 2-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv2" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                        <!-- amCharts javascript code -->
+                        <script type="text/javascript">
+                            AmCharts.makeChart("chartdiv2",
+                                {
+                                    "type": "serial",
+                                    "categoryField": "category",
+                                    "startDuration": 1,
+                                    "theme": "default",
+                                    "categoryAxis": {
+                                        "gridPosition": "start"
+                                    },
+                                    "trendLines": [],
+                                    "graphs": [                                        
+                                        {
+                                            "accessibleLabel": "Dennys Xavier",
+                                            "balloonText": "Dennys Xavier",
+                                            "bullet": "round",
+                                            "id": "AmGraph-1",
+                                            "title": "Dennys Xavier",
+                                            "type": "smoothedLine",
+                                            "valueField": "Dennys Xavier"
+                                        },
+                                        {
+                                            "id": "AmGraph-2",
+                                            "bullet": "round",
+                                            "title": "Andre Costa",
+                                            "type": "smoothedLine",
+                                            "valueField": "Andre Costa"
+                                        },
+                                        {
+                                            "id": "AmGraph-3",
+                                            "bullet": "round",
+                                            "title": "Arthur Morisson",
+                                            "type": "smoothedLine",
+                                            "valueField": "Arthur Morisson"
+                                        },
+                                        {
+                                            "id": "AmGraph-4",
+                                            "bullet": "round",
+                                            "title": "Sentinela da Liberdade",
+                                            "type": "smoothedLine",
+                                            "valueField": "Sentinela da Liberdade"
+                                        },
+                                        {
+                                            "accessibleLabel": "Raphael Lima",
+                                            "balloonText": "Raphael Lima",
+                                            "bullet": "round",
+                                            "id": "AmGraph-5",
+                                            "title": "Raphael Lima",
+                                            "type": "smoothedLine",
+                                            "valueField": "Raphael Lima"
+                                        },
+                                    ],
+                                    "guides": [],
+                                    "valueAxes": [
+                                        {
+                                            "id": "ValueAxis-1",
+                                            "title": "Influencers"
+                                        }
+                                    ],
+                                    "allLabels": [],
+                                    "balloon": {},
+                                    "legend": {
+                                        "enabled": true,
+                                        "accessibleLabel": "Seguidores",
+                                        "rollOverGraphAlpha": 0,
+                                        "useGraphSettings": true
+                                    },
+                                    "titles": [
+                                        {
+                                            "id": "Title-1",
+                                            "size": 15,
+                                            "text": "Influencers"
+                                        }
+                                    ],
+                                    "dataProvider": [
+                                        {
+                                            "Dennys Xavier": "78205",
+                                            "Andre Costa": "77727",
+                                            "Arthur Morisson": "18122",
+                                            "Sentinela da Liberdade": "43482",
+                                            "Raphael Lima": "43083",
+                                            "category": "Dez - 20"
+                                        },
+                                        {
+                                            "Dennys Xavier": "79108",
+                                            "Andre Costa": "78964",
+                                            "Arthur Morisson": "31814",
+                                            "Sentinela da Liberdade": "43672",
+                                            "Raphael Lima": "43710",
+                                            "category": "Jan - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "80666",
+                                            "Andre Costa": "82942",
+                                            "Arthur Morisson": "35119",
+                                            "Sentinela da Liberdade": "45375",
+                                            "Raphael Lima": "43434",
+                                            "category": "Fev - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "81167",
+                                            "Andre Costa": "83473",
+                                            "Arthur Morisson": "37974",
+                                            "Sentinela da Liberdade": "46337",
+                                            "Raphael Lima": "43028",
+                                            "category": "Mar - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "81720",
+                                            "Andre Costa": "83992",
+                                            "Arthur Morisson": "42663",
+                                            "Sentinela da Liberdade": "46662",
+                                            "Raphael Lima": "42925",
+                                            "category": "Abr - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "81856",
+                                            "Andre Costa": "85852",
+                                            "Arthur Morisson": "43797",
+                                            "Sentinela da Liberdade": "46201",
+                                            "Raphael Lima": "43176",
+                                            "category": "Mai - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "81722",
+                                            "Andre Costa": "84901",
+                                            "Arthur Morisson": "46008",
+                                            "Sentinela da Liberdade": "46065",
+                                            "Raphael Lima": "42971",
+                                            "category": "Jun - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "83274",
+                                            "Andre Costa": "84038",
+                                            "Arthur Morisson": "49489",
+                                            "Sentinela da Liberdade": "45829",
+                                            "Raphael Lima": "43255",
+                                            "category": "Jul - 21"
+                                        },
+                                        {
+                                            "Dennys Xavier": "83226",
+                                            "Andre Costa": "83425",
+                                            "Arthur Morisson": "51876",
+                                            "Sentinela da Liberdade": "46698",
+                                            "Raphael Lima": "43156",
+                                            "category": "Ago - 21"
+                                        }
+                                    ]
+                                }
+                            );
+                        </script>
+                        <p></p> 
+                </div>
+                <!-- Partidos-->
+                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                    <div id="chartdiv6" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+                    <!-- amCharts javascript code -->
+                    <script type="text/javascript">
+                        AmCharts.makeChart("chartdiv6",
+                            {
+                                "type": "serial",
+                                "categoryField": "category",
+                                "startDuration": 1,
+                                "theme": "default",
+                                "categoryAxis": {
+                                    "gridPosition": "start"
+                                },
+                                "trendLines": [],
+                                "graphs": [
+                                    {
+                                        "id": "AmGraph-1",
+                                        "bullet": "round",
+                                        "title": "APB",
+                                        "type": "smoothedLine",
+                                        "valueField": "APB"
+                                    },
+                                    {
+                                        "id": "AmGraph-2",
+                                        "bullet": "round",
+                                        "title": "MBL",
+                                        "type": "smoothedLine",
+                                        "valueField": "MBL"
+                                    },
+                                    {
+                                        "accessibleLabel": "PT",
+                                        "balloonText": "PT",
+                                        "bullet": "round",
+                                        "id": "AmGraph-3",
+                                        "title": "PT",
+                                        "type": "smoothedLine",
+                                        "valueField": "PT"
+                                    },
+                                    {
+                                        "accessibleLabel": "Novo",
+                                        "balloonText": "Novo",
+                                        "bullet": "round",
+                                        "id": "AmGraph-4",
+                                        "title": "Novo",
+                                        "type": "smoothedLine",
+                                        "valueField": "Novo"
+                                    },
+                                    {
+                                        "id": "AmGraph-5",
+                                        "bullet": "round",
+                                        "title": "PSOL",
+                                        "type": "smoothedLine",
+                                        "valueField": "PSOL"
+                                    },                                                                        
+                                ],
+                                "guides": [],
+                                "valueAxes": [
+                                    {
+                                        "id": "ValueAxis-1",
+                                        "title": "Seguidores"
+                                    }
+                                ],
+                                "allLabels": [],
+                                "balloon": {},
+                                "legend": {
+                                    "enabled": true,
+                                    "accessibleLabel": "Seguidores",
+                                    "rollOverGraphAlpha": 0,
+                                    "useGraphSettings": true
+                                },
+                                "titles": [
+                                    {
+                                        "id": "Title-1",
+                                        "size": 15,
+                                        "text": "Partidos"
+                                    }
+                                ],
+                                "dataProvider": [
+                                        {
+                                        "PT": "455261",
+                                        "Novo": "393827",
+                                        "PSOL": "229999",
+                                        "APB": "638950",
+                                        "MBL": "851815",
+                                        "category": "Jan - 20"
+                                    },
+                                    {
+                                        "PT": "461082",
+                                        "Novo": "394418",
+                                        "PSOL": "234944",
+                                        "APB": "716095",
+                                        "MBL": "847775",
+                                        "category": "Fev - 20"
+                                    },
+                                    {
+                                        "PT": "466532",
+                                        "Novo": "393606",
+                                        "PSOL": "239807",
+                                        "APB": "767081",
+                                        "MBL": "848323",
+                                        "category": "Mar - 20"
+                                    },
+                                    {
+                                        "PT": "478540",
+                                        "Novo": "400745",
+                                        "PSOL": "251069",
+                                        "APB": "805908",
+                                        "MBL": "856986",
+                                        "category": "Abr - 20"
+                                    },
+                                    {
+                                        "PT": "492386",
+                                        "Novo": "407558",
+                                        "PSOL": "261461",
+                                        "APB": "807656",
+                                        "MBL": "792045",
+                                        "category": "Mai - 20"
+                                    },
+                                    {
+                                        "PT": "502053",
+                                        "Novo": "413944",
+                                        "PSOL": "275261",
+                                        "APB": "819549",
+                                        "MBL": "751937",
+                                        "category": "Jun - 20"
+                                    },
+                                    {
+                                        "PT": "507779",
+                                        "Novo": "418068",
+                                        "PSOL": "283949",
+                                        "APB": "871478",
+                                        "MBL": "733915",
+                                        "category": "Jul - 20"
+                                    },
+                                    {
+                                        "PT": "511998",
+                                        "Novo": "419384",
+                                        "PSOL": "289688",
+                                        "APB": "916063",
+                                        "MBL": "721944",
+                                        "category": "Ago - 20"
+                                    },
+                                    {
+                                        "PT": "516180",
+                                        "Novo": "419264",
+                                        "PSOL": "293800",
+                                        "APB": "936554",
+                                        "MBL": "715820",
+                                        "category": "Set - 20"
+                                    },
+                                    {
+                                        "PT": "520977",
+                                        "Novo": "418753",
+                                        "PSOL": "300309",
+                                        "APB": "950965",
+                                        "MBL": "709968",
+                                        "category": "Out - 20"
+                                    },
+                                    {
+                                        "PT": "524881",
+                                        "Novo": "418802",
+                                        "PSOL": "306782",
+                                        "APB": "959392",
+                                        "MBL": "707885",
+                                        "category": "Nov - 20"
+                                    },
+                                    {
+                                        "PT": "530135",
+                                        "Novo": "422680",
+                                        "PSOL": "326721",
+                                        "APB": "966035",
+                                        "MBL": "710400",
+                                        "category": "Dez - 20"
+                                    },
+                                    {
+                                        "PT": "532389",
+                                        "Novo": "420547",
+                                        "PSOL": "334188",
+                                        "APB": "967040",
+                                        "MBL": "710518",
+                                        "category": "Jan - 21"
+                                    },
+                                    {
+                                        "PT": "536249",
+                                        "Novo": "412799",
+                                        "PSOL": "339133",
+                                        "APB": "968047",
+                                        "MBL": "689545",
+                                        "category": "Fev - 21"
+                                    },
+                                    {
+                                        "PT": "538985",
+                                        "Novo": "408568",
+                                        "PSOL": "339823",
+                                        "APB": "968803",
+                                        "MBL": "680454",
+                                        "category": "Mar - 21"
+                                    },
+                                    {
+                                        "PT": "569699",
+                                        "Novo": "405426",
+                                        "PSOL": "344903",
+                                        "APB": "973125",
+                                        "MBL": "671784",
+                                        "category": "Abr - 21"
+                                    },
+                                    {
+                                        "PT": "574814",
+                                        "Novo": "401821",
+                                        "PSOL": "345321",
+                                        "APB": "977209",
+                                        "MBL": "664604",
+                                        "category": "Mai - 21"
+                                    },
+                                    {
+                                        "PT": "590912",
+                                        "Novo": "398332",
+                                        "PSOL": "346279",
+                                        "APB": "977177",
+                                        "MBL": "658800",
+                                        "category": "Jun - 21"
+                                    },
+                                    {
+                                        "PT": "613174",
+                                        "Novo": "401636",
+                                        "PSOL": "350776",
+                                        "APB": "981861",
+                                        "MBL": "658695",
+                                        "category": "Jul - 21"
+                                    },
+                                    {
+                                        "PT": "622900",
+                                        "Novo": "396361",
+                                        "PSOL": "351970",
+                                        "APB": "977733",
+                                        "MBL": "654984",
+                                        "category": "Ago - 21"
+                                    }
+                                ]
+                            }
+                        );
+                    </script>
+                    <p>Observação: Não apoiamos nenhum partido político.</p>           
+         <!-- Partidos 2-->
+         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div id="chartdiv7" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+            <!-- amCharts javascript code -->
+            <script type="text/javascript">
+                AmCharts.makeChart("chartdiv7",
+                    {
+                        "type": "serial",
+                        "categoryField": "category",
+                        "startDuration": 1,
+                        "theme": "default",
+                        "categoryAxis": {
+                            "gridPosition": "start"
+                        },
+                        "trendLines": [],
+                        "graphs": [                                                        
+                            {
+                                "id": "AmGraph-2",
+                                "bullet": "round",
+                                "title": "PDT",
+                                "type": "smoothedLine",
+                                "valueField": "PDT"
+                            },
+                            {
+                                "id": "AmGraph-3",
+                                "bullet": "round",
+                                "title": "PSDB",
+                                "type": "smoothedLine",
+                                "valueField": "PSDB"
+                            },
+                            {
+                                "accessibleLabel": "Democratas",
+                                "balloonText": "Democratas",
+                                "bullet": "round",
+                                "id": "AmGraph-4",
+                                "title": "Democratas",
+                                "type": "smoothedLine",
+                                "valueField": "Democratas"
+                            },            
+                            {
+                                "accessibleLabel": "MDB",
+                                "balloonText": "MDB",
+                                "bullet": "round",
+                                "id": "AmGraph-5",
+                                "title": "MDB",
+                                "type": "smoothedLine",
+                                "valueField": "MDB"
+                            },
+                            {
+                                "id": "AmGraph-1",
+                                "bullet": "round",
+                                "title": "PSL",
+                                "type": "smoothedLine",
+                                "valueField": "PSL"
+                            },                        
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "title": "Seguidores"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "enabled": true,
+                            "accessibleLabel": "Seguidores",
+                            "rollOverGraphAlpha": 0,
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Partidos"
+                            }
+                        ],
+                        "dataProvider": [
+                            {
+                                "Democratas": "25315",
+                                "MDB": "23529",
+                                "PSL": "279549",
+                                "PSDB": "32578",
+                                "PDT": "46676",
+                                "category": "Dez - 20"
+                            },
+                            {
+                                "Democratas": "25565",
+                                "MDB": "24010",
+                                "PSL": "277283",
+                                "PSDB": "32872",
+                                "PDT": "47248",
+                                "category": "Jan - 21"
+                            },
+                            {
+                                "Democratas": "26559",
+                                "MDB": "24892",
+                                "PSL": "272826",
+                                "PSDB": "33307",
+                                "PDT": "47843",
+                                "category": "Fev - 21"
+                            },
+                            {
+                                "Democratas": "27330",
+                                "MDB": "25084",
+                                "PSL": "269655",
+                                "PSDB": "33592",
+                                "PDT": "48181",
+                                "category": "Mar - 21"
+                            },
+                            {
+                                "Democratas": "28233",
+                                "MDB": "25346",
+                                "PSL": "266744",
+                                "PSDB": "34009",
+                                "PDT": "48788",
+                                "category": "Abr - 21"
+                            },
+                            {
+                                "Democratas": "28362",
+                                "MDB": "25466",
+                                "PSL": "264409",
+                                "PSDB": "34175",
+                                "PDT": "48998",
+                                "category": "Mai - 21"
+                            },
+                            {
+                                "Democratas": "28932",
+                                "MDB": "25703",
+                                "PSL": "262336",
+                                "PSDB": "35314",
+                                "PDT": "49076",
+                                "category": "Jun - 21"
+                            },
+                            {
+                                "Democratas": "29094",
+                                "MDB": "26007",
+                                "PSL": "260756",
+                                "PSDB": "35996",
+                                "PDT": "50064",
+                                "category": "Jul - 21"
+                            },
+                            {
+                                "Democratas": "29213",
+                                "MDB": "26294",
+                                "PSL": "256282",
+                                "PSDB": "36739",
+                                "PDT": "50552",
+                                "category": "Ago - 21"
+                            }
+                        ]
+                    }
+                );
+            </script>
+            <p>Observação: Não apoiamos nenhum partido político.</p>   
+         <!-- Partidos 3-->
+         <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+            <div id="chartdiv8" style="width: 100%; height: 400px; background-color: #FFFFFF;" ></div>                    
+            <!-- amCharts javascript code -->
+            <script type="text/javascript">
+                AmCharts.makeChart("chartdiv8",
+                    {
+                        "type": "serial",
+                        "categoryField": "category",
+                        "startDuration": 1,
+                        "theme": "default",
+                        "categoryAxis": {
+                            "gridPosition": "start"
+                        },
+                        "trendLines": [],
+                        "graphs": [                                                        
+                            {
+                                "id": "AmGraph-1",
+                                "bullet": "round",
+                                "title": "PSB",
+                                "type": "smoothedLine",
+                                "valueField": "PSB"
+                            },
+                            {
+                                "id": "AmGraph-2",
+                                "bullet": "round",
+                                "title": "PP",
+                                "type": "smoothedLine",
+                                "valueField": "PP"
+                            },
+                            {
+                                "accessibleLabel": "PTB",
+                                "balloonText": "PTB",
+                                "bullet": "round",
+                                "id": "AmGraph-3",
+                                "title": "PTB",
+                                "type": "smoothedLine",
+                                "valueField": "PTB"
+                            },            
+                            {
+                                "accessibleLabel": "PL",
+                                "balloonText": "PL",
+                                "bullet": "round",
+                                "id": "AmGraph-4",
+                                "title": "PL",
+                                "type": "smoothedLine",
+                                "valueField": "PL"
+                            },
+                            {
+                                "id": "AmGraph-5",
+                                "bullet": "round",
+                                "title": "LIBER",
+                                "type": "smoothedLine",
+                                "valueField": "LIBER"
+                            },                        
+                        ],
+                        "guides": [],
+                        "valueAxes": [
+                            {
+                                "id": "ValueAxis-1",
+                                "title": "Seguidores"
+                            }
+                        ],
+                        "allLabels": [],
+                        "balloon": {},
+                        "legend": {
+                            "enabled": true,
+                            "accessibleLabel": "Seguidores",
+                            "rollOverGraphAlpha": 0,
+                            "useGraphSettings": true
+                        },
+                        "titles": [
+                            {
+                                "id": "Title-1",
+                                "size": 15,
+                                "text": "Partidos"
+                            }
+                        ],
+                        "dataProvider": [
+                            {
+                                "PP": "12528",
+                                "PTB": "4677",
+                                "PSB": "14960",                                
+                                "category": "Dez - 20"
+                            },
+                            {
+                                "PP": "12662",
+                                "PTB": "4901",
+                                "PSB": "15075",                                
+                                "category": "Jan - 21"
+                            },
+                            {
+                                "PP": "12778",
+                                "PTB": "5032",
+                                "PSB": "15107",
+                                "PL": "6108",                                
+                                "category": "Fev - 21"
+                            },
+                            {
+                                "PP": "13082",
+                                "PTB": "5517",
+                                "PSB": "15138",
+                                "PL": "6157",                                
+                                "category": "Mar - 21"
+                            },
+                            {
+                                "PP": "13193",
+                                "PTB": "5852",
+                                "PSB": "15170",
+                                "PL": "6264",                                
+                                "category": "Abr - 21"
+                            },
+                            {
+                                "PP": "13391",
+                                "PTB": "6168",
+                                "PSB": "15206",
+                                "PL": "6359",                                
+                                "category": "Mai - 21"
+                            },
+                            {
+                                "PP": "13564",
+                                "PTB": "6510",
+                                "PSB": "15419",
+                                "PL": "6603",                                
+                                "category": "Jun - 21"
+                            },
+                            {
+                                "PP": "13668",
+                                "PTB": "6757",
+                                "PSB": "18605",
+                                "PL": "6741",
+                                "LIBER": "1946",
+                                "category": "Jul - 21"
+                            },
+                            {
+                                "PP": "13832",
+                                "PTB": "7222",
+                                "PSB": "18831",
+                                "PL": "6864",
+                                "LIBER": "1974",
+                                "category": "Ago - 21"
+                            }
+                        ]
+                    }
+                );
+            </script>
+            <p>Observação: Não apoiamos nenhum partido político.</p>   
+        </section>      
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Sede</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">São Carlos</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50"><a href="#!">sementedaliberdade.sc@gmail.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Instagram</h4>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">@sementedaliberdade</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="https://www.instagram.com/sementedaliberdade/"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/sedli.sc"><i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://www.linkedin.com/company/sedli-sc/"><i class="fab fa-linkedin"></i></a>
+                    <a class="mx-2" href="https://sementedaliberdade.medium.com/"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Semente da Liberdade 2021</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+       
+    </body>
+</html>
